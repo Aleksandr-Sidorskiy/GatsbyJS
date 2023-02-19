@@ -1,9 +1,15 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
-module.exports = {
-  siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
-  },
-  plugins: [],
-}
+// module.exports = {
+//   siteMetadata: {
+//     title: `Gatsby`,
+//   },
+//   plugins: [
+//     `gatsby-transform-plugin`,
+//     {
+//       resolve: `gatsby-plugin-name`,
+//       options: {
+//         optionA: true,
+//         optionB: `Another option`,
+//       },
+//     },
+//   ],
+// }
