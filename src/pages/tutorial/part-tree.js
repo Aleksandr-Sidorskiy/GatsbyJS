@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../../components/layout"
 
-const PartZero = () => (
+const PartTree = () => (
   <>
     <Layout>
-      <div>Welcome to tutorial/part-zero</div>
+      <div>Welcome to tutorial/part-one</div>
     </Layout>
   </>
 )
-export default PartZero
+export default PartTree

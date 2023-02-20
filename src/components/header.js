@@ -1,14 +1,37 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, Link, StaticQuery } from "gatsby"
 
-import logoSrc from "../images/icon.png"
-
-const Header = () => (
-  <header>
-    <Link to="/">
-      <img src={logoSrc} alt="logo" width="60px" height="60px" />
-    </Link>
-    That is header
-  </header>
-)
+const Header = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        {
+          allFile(filter: { name: { eq: "camera-man" } }) {
+            edges {
+              node {
+                publicURL
+              }
+            }
+          }
+        }
+      `}
+      render={({
+        allFile: {
+          edges: [
+            {
+              node: { publicURL },
+            },
+          ],
+        },
+      }) => (
+        <header>
+          <Link to="/">
+            <img src={publicURL} alt="logo" width="60px" height="60px" />
+          </Link>
+          That is header
+        </header>
+      )}
+    />
+  )
+}
 export default Header

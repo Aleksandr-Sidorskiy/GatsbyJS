@@ -1,15 +1,15 @@
-// module.exports = {
-//   siteMetadata: {
-//     title: `Gatsby`,
-//   },
-//   plugins: [
-//     `gatsby-transform-plugin`,
-//     {
-//       resolve: `gatsby-plugin-name`,
-//       options: {
-//         optionA: true,
-//         optionB: `Another option`,
-//       },
-//     },
-//   ],
-// }
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+
+    `gatsby-plugin-typography`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-styled-components`,
+  ],
+}
