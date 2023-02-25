@@ -7,20 +7,9 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       },
     },
-
+    // add style plugins below
     `gatsby-plugin-typography`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-  ],
-}
-
-module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
   ],
 }

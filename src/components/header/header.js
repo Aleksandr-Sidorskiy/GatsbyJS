@@ -1,5 +1,23 @@
-// import React from "react"
+import React from "react"
 // import { graphql, Link, StaticQuery } from "gatsby"
+
+import HeaderStyle from "./header-style"
+import Menu from "../burger-menu/burger-menu"
+import Burger from "../burger-menu/burger-btm"
+import Logo from "../logo/logo"
+
+const Header = () => {
+  const [open, setOpen] = React.useState(false)
+  return (
+    <HeaderStyle>
+      <Logo />
+      <Burger open={open} setOpen={setOpen} />
+      <Menu open={open} setOpen={setOpen} />
+    </HeaderStyle>
+  )
+}
+
+export default Header
 
 // const Header = () => {
 //   return (

@@ -1,25 +1,22 @@
 import React from "react"
+import StyledMenu from "./burger-menu-style"
 
-const BurgerMenuBtn = () => {
+const BurgerMenu = ({ open }) => {
   return (
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  )
-}
-
-const BurgerMenu = () => {
-  return (
-    <nav>
+    <StyledMenu open={open}>
       <ul>
-        <li>Студія</li>
-        <li>Портфоліо</li>
-        <li>Контакти</li>
+        <li>
+          <a href="/">Студія</a>
+        </li>
+        <li>
+          <a href="/">Портфоліо</a>
+        </li>
+        <li>
+          <a href="/">Контакти</a>
+        </li>
       </ul>
-    </nav>
+    </StyledMenu>
   )
 }
 
-export default { BurgerMenu, BurgerMenuBtn }
+export default BurgerMenu
