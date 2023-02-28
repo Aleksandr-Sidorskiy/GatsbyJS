@@ -2,17 +2,15 @@ import React from "react"
 // import { graphql, Link, StaticQuery } from "gatsby"
 
 import HeaderStyle from "./header-style"
-import Menu from "../burger-menu/burger-menu"
-import Burger from "../burger-menu/burger-btm"
-import Logo from "../logo/logo"
+// import Menu from "../burger-menu/burger-menu"
+// import Burger from "../burger-menu/burger-btm"
+// import Logo from "../logo/logo"
+import Nav from "../navigation/navigation"
 
 const Header = () => {
-  const [open, setOpen] = React.useState(false)
   return (
     <HeaderStyle>
-      <Logo />
-      <Burger open={open} setOpen={setOpen} />
-      <Menu open={open} setOpen={setOpen} />
+      <Nav />
     </HeaderStyle>
   )
 }

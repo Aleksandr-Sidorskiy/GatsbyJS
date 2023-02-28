@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
 const StyledMenu = styled.nav`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -17,14 +22,13 @@ const StyledMenu = styled.nav`
   &:hover {
     color: #2196f3;
   }
-  /* transform: ${({ open }) =>
-    open ? "translateX(0%)" : "translateX(100%)"}; */
+  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
   @media screen and(max-width: 767px) {
     width: 100%;
   }
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     display: flex;
-  }
+  } */
 `
 
 export default StyledMenu
