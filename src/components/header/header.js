@@ -6,11 +6,14 @@ import HeaderStyle from "./header-style"
 // import Burger from "../burger-menu/burger-btm"
 // import Logo from "../logo/logo"
 import Nav from "../navigation/navigation"
+import Wrapper from "../wrapper/wrapper"
 
 const Header = () => {
   return (
     <HeaderStyle>
-      <Nav />
+      <Wrapper>
+        <Nav />
+      </Wrapper>
     </HeaderStyle>
   )
 }
