@@ -6,24 +6,25 @@ import Container from "../wrapper/wrapper-style"
 // import Sidebar from "./sidebar"
 
 const Layout = ({ pageTitle, children }) => {
+  const { List, Heading, NavLinkItem, NavLinkText } = style
   return (
     <Container>
       <nav>
-        <style.List>
-          <style.NavLinkItem>
+        <List>
+          <NavLinkItem>
             <Link to="/">
-              <style.NavLinkText> Home</style.NavLinkText>
+              <NavLinkText> Home</NavLinkText>
             </Link>
-          </style.NavLinkItem>
-          <style.NavLinkItem>
+          </NavLinkItem>
+          <NavLinkItem>
             <Link to="/about">
-              <style.NavLinkText>About</style.NavLinkText>
+              <NavLinkText>About</NavLinkText>
             </Link>
-          </style.NavLinkItem>
-        </style.List>
+          </NavLinkItem>
+        </List>
       </nav>
       <main>
-        <style.Heading>{pageTitle}</style.Heading>
+        <Heading>{pageTitle}</Heading>
         {children}
       </main>
     </Container>
