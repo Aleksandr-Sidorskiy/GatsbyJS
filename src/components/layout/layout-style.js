@@ -18,5 +18,11 @@ const NavLinkItem = styled.li`
 const NavLinkText = styled.p`
   color: black;
 `
+const HeaderNameSite = styled.header`
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+`
 
-export default { List, Heading, NavLinkItem, NavLinkText }
+export default { List, Heading, NavLinkItem, NavLinkText, HeaderNameSite }

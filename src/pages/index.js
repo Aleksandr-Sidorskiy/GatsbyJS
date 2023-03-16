@@ -2,6 +2,8 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout/layout"
 import Container from "../components/wrapper/wrapper-style"
+import Seo from "../components/seo"
+
 const HomePage = () => {
   return (
     <Container>
@@ -16,6 +18,6 @@ const HomePage = () => {
   )
 }
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <Seo title="Home page" />
 
 export default HomePage
